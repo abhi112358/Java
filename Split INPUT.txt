@@ -1,0 +1,24 @@
+//after splitting we lose the part that is split on
+//eg 
+"a @b".split("@")
+//will give you ["a ","b"]
+
+
+//split at whtitespaces //most used
+String[] s = line.trim().split("\\s+");//split at one or more whtitespaces
+
+
+
+//no particular use	
+line.replaceAll("\\s+","");//replaces 1 or more backspaces with nospace
+
+//used to split comma separated inputs
+String[] numbers = line.trim.()split("\\s*,\\s*");
+//splits at whitespace followed by comma followed by other whitespace
+//originnal -> sexy sexy; bitch    ,hello ,   world
+//final ->
+//[
+//sexy sexy; bitch
+//hello
+//world
+//]
